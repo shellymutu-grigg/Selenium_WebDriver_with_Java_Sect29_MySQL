@@ -1,0 +1,27 @@
+MySQL commands:
+
+Login personal user: mysql -ushellymutu-grigg -p<SEE BITWARDEN>
+
+Login root: mysql -uroot -p
+Enter password from bitwarden
+
+Create user: CREATE USER '<USERNAME>'@'localhost' IDENTIFIED BY '<PASSWORD>';
+
+See databases: show databases;
+
+Create DB: CREATE DATABASE section29DB;
+
+Connect to DB: use <DATABASE_NAME>
+
+See tables in DB: show tables;
+
+Create table: CREATE TABLE EmployeeInfo(name varchar(30), id int, location varchar(30), 
+																				age int);
+See table schema: describe EmployeeInfo;
+
+Add table record: INSERT INTO EmployeeInfo values('sam', 01, 'New Jersey', 21);
+
+See table records: SELECT * from EmployeeInfo;
+
+Change record: UPDATE EmployeeInfo SET name = 'susan' WHERE id=3;
+Quit db connection: \q
